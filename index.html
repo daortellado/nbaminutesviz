@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NBA Minutes Sim</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="example-parent">
+  <div class="example-origin">
+    <div
+      id="draggable-1"
+      class="example-draggable"
+      draggable="true"
+      ondragstart="onDragStart(event);"
+    >
+      Fox (Mins: <span id="mins"></span>)
+    </div>
+    <div
+      id="draggable-2"
+      class="example-draggable"
+      draggable="true"
+      ondragstart="onDragStart(event);"
+    >
+      Mitchell
+    </div>
+  </div>
+
+  <div
+    class="example-dropzone"
+    ondragover="onDragOver(event);"
+    ondrop="onDrop(event);"
+  >
+    Point guard
+  </div>
+  <div class="slidecontainer" id="togglecontainer" style="display: none">
+  <p>Mins:</p>
+  <input id="mySlider" type="range" min="0" max="48">
+</div>
+<script src="script.js"></script>
+  </body>
+</html>
